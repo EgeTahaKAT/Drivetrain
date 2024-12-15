@@ -51,10 +51,10 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopPeriodic() {
-    double leftSpeed = joystick.getRawAxis(1);
-    double rightSpeed = joystick.getRawAxis(5);
+    double speed = joystick.getY();
+    double rotation = joystick.getX();
 
-    driveTrain.tankDrive(leftSpeed, rightSpeed);
+    driveTrain.tankDrive(speed, rotation);
   }
 
   @Override
