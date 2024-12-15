@@ -54,7 +54,7 @@ public class Robot extends TimedRobot {
     double speed = joystick.getY();
     double rotation = joystick.getX();
 
-    driveTrain.tankDrive(speed, rotation);
+    driveTrain.arcadeDrive(speed, rotation);
   }
 
   @Override
